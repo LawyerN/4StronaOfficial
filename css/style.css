@@ -149,7 +149,6 @@
   .navbar__item{
     height: 80px;
     width: 100%;
-    display: flex;
     background-color: rgb(255, 0, 68);
     border: none;
     color: white;
@@ -159,7 +158,6 @@
     margin: 4px 2px;
     transition: ease-out 0.5s;
     box-shadow: inset 0 0 0 0 #19e506;
-  
     
   }
   
@@ -226,6 +224,25 @@
     background: lightcyan;
     border-radius: 3%;
   }
+  .ret-menu{
+    width: 100%;
+    height: 100%;
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    margin-left: 2rem;
+    display: none;
+  }
+
+  .ret-menu-m{
+    background-color: blue;
+    border-radius: 0%;
+  }
+ 
+
+  .navbar__item:hover > .ret-menu{
+    display: block;
+  }
   
   @media screen and (min-width: 768px) and (max-width: 1024px) {
   
@@ -234,7 +251,6 @@
         grid-template-rows: repeat(4, 300px);
         grid-template-columns: repeat(2, 300px);
         justify-content: center;
-        
         
     }
     
