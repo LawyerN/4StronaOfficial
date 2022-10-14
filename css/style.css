@@ -49,8 +49,6 @@
    -moz-text-fill-color: transparent;
    display: flex;
    cursor: pointer;
-   text-decoration: none;
-   font-size: 2rem;
   }
   
   .navbar__menu {
@@ -95,7 +93,7 @@
   
   nav ul li{
     padding: 8px 15px;
-    border-radius: 10px;
+    border-radius: 0;
     transition: 0.2s ease-in;
   }
   
@@ -250,7 +248,6 @@
     list-style-type:none;
     padding:0;
     margin:0;
-    margin-left: 2rem;
     display: none;
   }
 
