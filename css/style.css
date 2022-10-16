@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
     scroll-behavior: smooth;
+    
   }
   
   body{
@@ -13,6 +14,7 @@
       min-width: 100vw;
       font-family: 'Barlow Semi Condensed', sans-serif;
       margin: 0;
+      overflow-x:hidden;
       
   }
   
@@ -109,10 +111,13 @@
   }
   
   nav .menubtn{
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bolder;
     cursor: pointer;
     display: none;
+    justify-content: center;
+    align-items: center;
+    color: lightcyan;
   }
   
   /*responsywnosc*/
@@ -240,27 +245,23 @@
     padding: 10px;
   }
   
-  .main-content{
-    margin-top: 20px;
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 300px;
-    grid-template-rows: repeat(9, 300px);
-    gap: 50px;
-    justify-content: center;
-    
-  }
+  
   
   .button{
     padding: 10px;
   }
-  
   .main-content{
-    margin-top: 20px;
+    width: 100%;
+
+
+  }
+  .info{
+    margin-top: 0;
+    margin-bottom: 100px;
     padding: 10px;
     display: grid;
     grid-template-columns: 300px;
-    grid-template-rows: repeat(9, 300px);
+    grid-template-rows: repeat(6, 300px);
     gap: 50px;
     justify-content: center;
     
@@ -293,9 +294,9 @@
   
   @media screen and (min-width: 768px) and (max-width: 1024px) {
   
-    .main-content{
+    .info{
         gap: 50px;
-        grid-template-rows: repeat(4, 300px);
+        grid-template-rows: repeat(3, 300px);
         grid-template-columns: repeat(2, 300px);
         justify-content: center;
         
@@ -305,9 +306,9 @@
   
   @media screen and (min-width: 1024px){
   
-    .main-content{
+    .info{
         gap: 50px;
-        grid-template-rows: repeat(4, 300px);
+        grid-template-rows: repeat(2, 300px);
         grid-template-columns: repeat(3, 300px);
         justify-content: center;
         
@@ -322,4 +323,35 @@
     height: 100%;
     padding: 100px;
   }
+
+  footer{
+    
+    height: 100px;
+    width: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 1000%,
+      rgba(15, 124, 5, 1) 5%,
+      rgba(0, 90, 143, 1) 70%
+    );
+  }
+
+  .partners{
+    width: 100%;
+    background: lightcyan;
+    height: fit-content;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .partner-logo{
+    margin-top: 10px;
+    width: 200px;
+    height: 100px;
+  }
+  .part{
+    border-bottom: 1px solid black;
+  }
   
+ 

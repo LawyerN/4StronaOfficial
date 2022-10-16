@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="css\style.css" />
     <link rel="icon" href="images/favicon.ico" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src = "app.js"></script>
-    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="app.js"></script>
   </head>
 
   <body>
@@ -25,13 +27,11 @@
               <a href="#home" class="navbar__links" id="home-page"
                 >Strona Główna</a
               >
-              
             </li>
             <li class="navbar__item">
               <a href="#about" class="navbar__links" id="edziennik-page"
                 >E-Dziennik</a
               >
-             
             </li>
             <li class="navbar__item">
               <a href="#services" class="navbar__links" id="documents-page"
@@ -53,7 +53,6 @@
               <ul class="ret-menu">
                 <li class="ret-menu-m">Profile Klas</li>
                 <li class="ret-menu-m">Zasady Rekrutacji</li>
-               
               </ul>
             </li>
 
@@ -68,7 +67,6 @@
 
             <li class="navbar__item">
               <a href="#sign-up" class="navbar__links" id="contact">Kontakt</a>
-             
             </li>
           </ul>
         </div>
@@ -80,9 +78,10 @@
         <a href="#" class="closeBtn" onclick="closeNav()"> &#10006; </a>
 
         <a href="#home"> Strona Główna </a>
-        <a href="#home"> E-Dziennik  </a>
-         
-        <button class="dropdown-btn">Dokumenty
+        <a href="#home"> E-Dziennik </a>
+
+        <button class="dropdown-btn">
+          Dokumenty
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
@@ -91,43 +90,61 @@
           <a href="#"> Wzory pism</a>
           <a href="#"> Programy</a>
           <a href="#"> Inne dokumenty</a>
-          
-          
         </div>
 
-       
-        <button class="dropdown-btn">Rekrutacja
+        <button class="dropdown-btn">
+          Rekrutacja
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
           <a href="#">Profile klas</a>
           <a href="#">Zasady Rekrutacji</a>
-          
         </div>
-       
-       
-        <button class="dropdown-btn">Szkoła
+
+        <button class="dropdown-btn">
+          Szkoła
           <i class="fa fa-caret-down"></i>
         </button>
         <div class="dropdown-container">
           <a href="#">O nas</a>
           <a href="#">Nauczyciele</a>
-          
         </div>
         <a href="#home"> Kontakt </a>
       </div>
 
       <div class="main-content">
-        <div class="card-info"></div>
-        <div class="card-info"></div>
-        <div class="card-info"></div>
-        <div class="card-info"></div>
-        <div class="card-info"></div>
-        <div class="card-info"></div>
+        <div class="info">
+          <div class="card-info"></div>
+          <div class="card-info"></div>
+          <div class="card-info"></div>
+          <div class="card-info"></div>
+          <div class="card-info"></div>
+          <div class="card-info"></div>
+        </div>
+        <div class="partners">
+          <h2 class="part">Partnerzy</h2>
+          <img class="partner-logo" src="images/zdj.jpg" alt="Unicef" />
+          <img class="partner-logo" src="images/zdj.jpg" alt="Margotm" />
+          <img class="partner-logo" src="images/zdj.jpg" alt="PGNiG" />
+          <img class="partner-logo" src="images/zdj.jpg" alt="MPEC" />
+          <img class="partner-logo" src="images/zdj.jpg" alt="PWSZ" />
+          <img
+            class="partner-logo"
+            src="images/zdj.jpg"
+            alt="Roleski Majonezy"
+          />
+          <img class="partner-logo" src="images/zdj.jpg" alt="" />
+          <img
+            class="partner-logo"
+            src="images/zdj.jpg"
+            alt="Wymiana Młodzieży"
+          />
+        </div>
       </div>
     </div>
 
-    
+    <footer></footer>
+
     <script>
       function openNav() {
         document.getElementById("sidenav").style.width = "50%";
@@ -138,19 +155,19 @@
       }
 
       var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+      var i;
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
-  });
-}
+      for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var dropdownContent = this.nextElementSibling;
+          if (dropdownContent.style.display === "block") {
+            dropdownContent.style.display = "none";
+          } else {
+            dropdownContent.style.display = "block";
+          }
+        });
+      }
     </script>
   </body>
 </html>
